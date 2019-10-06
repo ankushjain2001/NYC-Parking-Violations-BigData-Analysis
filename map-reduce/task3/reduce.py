@@ -9,7 +9,7 @@ for line in sys.stdin:
     line = line.strip()
     line = line.split('\t')
     lic_type = line[0]
-    amount, count = line[1].split(', ')
+    amount, count = line[1].split('|')
     if lic_type not in data:
         data[lic_type] = [float(amount), int(count)]
     else:
@@ -18,4 +18,3 @@ for line in sys.stdin:
 
 for key, val in data.items():
     print(key+'\t'+"{:0.2f}".format(val[0])+', '+"{:0.2f}".format(val[0]/val[1]))
-

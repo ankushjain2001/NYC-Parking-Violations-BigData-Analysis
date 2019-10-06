@@ -1,7 +1,11 @@
-1. NaN values:
+==============================
+DATA QUALITY ISSUES DISCOVERED
+==============================
+
+1. NaN values were discovered in the following columns:
     parking-violations.csv  : Column Indices [3, 4, 7, 8, 9, 11, 14, 17, 18, 19, 20]
     open-violations.csv     : Column Indices [1, 3, 7, 8, 10, 11]
 
 2. For Task 1, not all open-violations were present in the parking-violations
 
-3. In open-violations, 4 documents had punctuation marks (comma) in the 'plate' variable. In the manual line by line parsing of CSV using the split method with comma as the delimiter, these documents can produce errors. Hence, using a CSV reader is a reliable method.
+3. In open-violations, 4 documents had punctuation marks (comma) in the 'plate' variable and similarily in parking-violations. In the manual line by line parsing of CSV using the split method with comma as the delimiter, these documents can produce errors. Hence, using a CSV reader is the reliable method here.

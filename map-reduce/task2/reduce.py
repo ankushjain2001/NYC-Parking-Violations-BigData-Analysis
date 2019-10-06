@@ -14,3 +14,4 @@ for line in sys.stdin:
 
 for key, val in data.items():
     print(key+'\t'+str(val))
+
