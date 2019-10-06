@@ -17,6 +17,6 @@ out = sc.parallelize(out)
 # Mapping the max to the required format
 out =  out.map(lambda x: str(x[0][0])+', '+str(x[0][1])+'\t'+str(x[1]))
 # Saving the out RDD
-out.saveAsTextFile('hw1/task6_test.txt')
+out.saveAsTextFile('task6.out')
 # Stopping the Spark Context
 sc.stop()

@@ -14,6 +14,6 @@ out = park_lines.reduceByKey(add)\
              .map(lambda x: str(str(x[0])+'\t'+str(x[1])))
 #print(len(out.collect()))
 # Saving the out RDD
-out.saveAsTextFile('hw1/task2_test.txt')
+out.saveAsTextFile('task2.out')
 # Stopping the Spark Context
 sc.stop()

@@ -26,6 +26,6 @@ out = park_sn.union(intersection_sn)\
              .map(lambda x:str(x[0]+'\t'+x[1][1][0]+', '+x[1][1][1]+', '+x[1][1][2]+', '+x[1][1][3]))
 #print(len(out.collect()))
 # Saving the out RDD
-out.saveAsTextFile('hw1/task1_test.txt')
+out.saveAsTextFile('task1.out')
 # Stopping the Spark Context
 sc.stop()
